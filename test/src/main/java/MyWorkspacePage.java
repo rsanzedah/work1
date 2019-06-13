@@ -1,23 +1,23 @@
-package gov.gsa.sam.rms.pages;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import gov.gsa.sam.rms.locators.MyWorkspacePageLocator;
-import gov.gsa.sam.rms.utilities.CommonMethods;
+//import gov.gsa.sam.rms.locators.MyWorkspacePageLocator;
+//import gov.gsa.sam.rms.utilities.CommonMethods;
 
 public class MyWorkspacePage {
 	private static WebDriver driver;
 	private static Logger logger = LoggerFactory.getLogger(MyWorkspacePage.class);
 
-	private MyWorkspacePage() {
+	/*private MyWorkspacePage() {
 	}
 
 	// *****************************************************************************
@@ -35,10 +35,10 @@ public class MyWorkspacePage {
 		AccountDetailsPage.setDriver(MyWorkspacePage.getDriver());
 		CommonMethods.delay(4);
 
-	}
+	}*/
 
 	public static void clickSignInButton() {
-		driver.findElement(MyWorkspacePageLocator.SIGNIN_TAB).click();
+		driver.findElement(By.id("signin-button")).click();
 		CommonMethods.delay(2);
 
 	}
@@ -64,7 +64,7 @@ public class MyWorkspacePage {
 		MyWorkspacePage.driver = driver;
 	}
 
-	public static void goToFeedsPage() {
+	/*public static void goToFeedsPage() {
 		Actions actions = new Actions(driver);
 		WebElement feed = driver.findElement(MyWorkspacePageLocator.NOTIFICATIONS);
 		actions.moveToElement(feed).click().perform();
@@ -82,7 +82,7 @@ public class MyWorkspacePage {
 		SystemAccountDirectoryPage.setDriver(driver);
 		CommonMethods.delay(9);
 
-	}
+	}*/
 
 	public static void clickAcceptOnBanner() {
 		driver.findElement(By.id("login-accept")).click();
@@ -110,9 +110,9 @@ public class MyWorkspacePage {
 				"//*[@id=\"workspace-widgets\"]/div[1]/workspace-widget/div/profile-widget/div/div[1]/div/a[2]"))
 				.click();
 		CommonMethods.delay(1);
-		AccountDetailsPage.setDriver(driver);
-		RolesDirectoryViewAccessPage.setDriver(driver);
-		RoleMigrationPage.setDriver(driver);
+	//	AccountDetailsPage.setDriver(driver);
+		//RolesDirectoryViewAccessPage.setDriver(driver);
+		//RoleMigrationPage.setDriver(driver);
 	}
 
 }

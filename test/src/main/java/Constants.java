@@ -17,12 +17,12 @@ public class Constants {
 	
 
 	// login credentials
-	public static final String USEREMAIL = "shah.raiaan+coSelenium@gsa.gov";
-	public static final String USERPASS = "WhiteColor1!";
+	public static final String USEREMAIL = "sanzedah.rahman+domainadmin@gsa.gov";
+	public static final String USERPASS = "trialanderror";
 	public static final String USERPASS_NONFED = "BlackColor1!";
 	public static String pass;
 
-	public static final String GMAIL_USERNAME = "shah.raiaan@gsa.gov";
+	public static final String GMAIL_USERNAME = "sanzedah.rahman@gsa.gov";
 	public static String OTP;
 
 	// sleep time between steps

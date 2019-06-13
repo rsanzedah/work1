@@ -9,12 +9,12 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import gov.gsa.sam.rms.locators.AccountDetailsPageLocator;
+//import gov.gsa.sam.rms.locators.AccountDetailsPageLocator;
 
 public class CommonMethods {
 	private static Logger logger = LoggerFactory.getLogger(CommonMethods.class);
@@ -30,7 +30,7 @@ public class CommonMethods {
 		}
 	}
 
-	public static boolean findPageElement(WebDriver driver, By locator) {
+/*	public static boolean findPageElement(WebDriver driver, By locator) {
 		try {
 			driver.findElement(locator);
 			return true;
@@ -51,15 +51,15 @@ public class CommonMethods {
 		return elementFound;
 	}
 
-	public static void clickSideNavToGoToPage(String pageName, WebDriver driver) {
-		List<WebElement> pageList = driver.findElements(AccountDetailsPageLocator.SIDE_NAV);
+/*	public static void clickSideNavToGoToPage(String pageName, WebDriver driver) {
+	List<WebElement> pageList = driver.findElements(AccountDetailsPageLocator.SIDE_NAV);
 		logger.info("The size of the side-nav list is----" + pageList.size());
 		for (int i = 0; i < pageList.size(); i++) {
 			if (pageName.equals(pageList.get(i).getText())) {
 				
 				pageList.get(i).click();
-			}
-		}
+		*/	//}
+	//	}
 		
 	}
-}
+//}

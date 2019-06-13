@@ -1,4 +1,7 @@
-package gov.gsa.sam.rms.stepdefinition;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -9,19 +12,8 @@ import gov.gsa.sam.rms.login.gov.pages.RequestRoleOptionalPage;
 import gov.gsa.sam.rms.pages.AccountDetailsPage;
 import gov.gsa.sam.rms.pages.FeedsRequestPage;
 import gov.gsa.sam.rms.pages.MyRolesPage;
-import gov.gsa.sam.rms.pages.MyWorkspacePage;
-import gov.gsa.sam.rms.utilities.CommonMethods;
-import gov.gsa.sam.rms.utilities.Constants;
-import gov.gsa.sam.rms.utilities.ConstantsAccounts;
-import gov.gsa.sam.rms.utilities.LaunchBrowserUtil;
-import gov.gsa.sam.rms.utilities.PropertiesFileUtility;
-import gov.gsa.sam.rms.utilities.RMWidgetUtility;
-import gov.gsa.sam.rms.utilities.SignInUtility;
 import gov.gsa.sam.rms.utilities.SignUpUtility;
 import junit.framework.Assert;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class LoginStep {
 
